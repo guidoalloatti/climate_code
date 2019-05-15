@@ -12,8 +12,7 @@ function runTests() {
 }
 
 function printTestResults() {
-	var html = "";
-	html += "<ul>";
+	var html = "<ul>";
 	for(var i = 0; i < testsResults.length; i++) {
 		html = html + "<li>" + testsResults[i].description + " -> " + (testsResults[i].result ? "pass" : "failed");
 	}
