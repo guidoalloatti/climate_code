@@ -1,4 +1,3 @@
-# Climate Code Questions
 
 ## Coding Question - Climate 
 Time given to candidate - 1 hour 
@@ -14,7 +13,7 @@ this year.
 3. Write one or more unit tests to verify the above function works as expected. Try to think 
 of valuable cases to test for. 
 
-# Bonus questions: 
+## Bonus questions: 
 4. Sort the grower name results of the function so that growers that have planted more 
 recently are ordered earlier. 
 5. How would you optimize the code so that the function will perform better? 
