@@ -6,7 +6,7 @@ function runTests() {
 	eval_test(testShowGrowerNamesByPlantationByRecent("soybeans"), "Testing that the corn growers list matches sorted by recent");
 
 	var i;
-	var html = "Running Tests<br/><ul>"
+	var html = "<ul>"
 	for(i = 0; i < testsResults.length; i++) {
 		html = html + "<li>" + testsResults[i].description + " -> " + (testsResults[i].result ? "pass" : "failed");
 	}

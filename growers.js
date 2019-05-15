@@ -37,7 +37,7 @@ function showGrowerNamesByPlantation(plantation) {
 	var i;
 	var html = "<ul>";
 	for (i = 0; i < growersList.length; i++)	{
-		html = html + "<li>" + parseInt(i+1) + "). " + growersList[i] + "</li>";
+		html = html + "<li>" + growersList[i] + "</li>";
 	}
 	html = html + "</ul>";
 	document.getElementById("grower_names_" + plantation).innerHTML = html;
@@ -49,7 +49,7 @@ function showGrowerNamesByPlantationRecentFirst(plantation) {
 	var i;
 	var html = "<ul>";
 	for (i = 0; i < growers.length; i++)	{
-		html = html + "<li>" + parseInt(i+1) + "). " + growers[i].grower_name + " planted " + growers[i].planted + " on " + growers[i].date.toLocaleDateString() + "</li>";
+		html = html + "<li>" + growers[i].grower_name + " planted " + growers[i].planted + " on " + growers[i].date.toLocaleDateString() + "</li>";
 	}
 	html = html + "</ul>";
 	document.getElementById("grower_names_by_recent_" + plantation).innerHTML = html;

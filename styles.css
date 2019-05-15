@@ -1,0 +1,19 @@
+.section-header {
+	display: inline-block;
+	border-top: 1px solid #80808047;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.section-button {
+	display: inline-block;
+}
+
+.section-result {
+	margin-top: 10px;
+}
+
+.section-wrapper {
+	margin-bottom: 15px;
+}

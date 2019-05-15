@@ -4,51 +4,74 @@
     <script type="text/javascript" src="growers_json.js"></script>
     <script type="text/javascript" src="growers.js"></script>
     <script type="text/javascript" src="tests.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
     <div>
       <h2>
         Climate Code Challenge
       </h2>
-      <h3>
+    </div>
+
+    <div class="section-wrapper">
+      <div class="section-header">
         Growers Information (JSON format)
-      </h3>
+      </div>
+      <div class="section-button">
+        <button onclick="showGrowersJSON()">Show Growers Dataset - JSON</button>
+      </div>
+      <div class="section-result" id="growers_json"></div>
     </div>
 
-    <hr>
-    <div>
-      <div id="growers_json"></div>
-      <button onclick="showGrowersJSON()">Show Growers Dataset - JSON</button>
+    <div>     
+      <div class="section-header">
+        Corn Growers Information for this year
+      </div>
+      <div class="section-button">
+        <button onclick="showGrowerNamesByPlantation('corn')">Show</button>
+      </div>
+      <div class="section-result" id="grower_names_corn"></div>
     </div>
 
-    <hr>
-    <div>
-      <div id="grower_names_corn"></div>
-      <button onclick="showGrowerNamesByPlantation('corn')">Show Growers Name for this year for corn</button>
+    <div> 
+      <div class="section-header">
+        Soybeans Growers Information for this year
+      </div>
+      <div class="section-button">
+        <button onclick="showGrowerNamesByPlantation('soybeans')">Show</button>
+      </div>
+      <div class="section-result" id="grower_names_soybeans"></div>
     </div>
 
-    <hr>
-    <div>
-      <div id="grower_names_soybeans"></div>
-      <button onclick="showGrowerNamesByPlantation('soybeans')">Show Growers Name for this year for soybeans</button>
+    <div>    
+      <div class="section-header">
+        Corn Growers Information for this year sorted by recent date
+      </div>
+      <div class="section-button">
+        <button onclick="showGrowerNamesByPlantationRecentFirst('corn')">Show</button>
+      </div>
+      <div class="section-result" id="grower_names_by_recent_corn"></div>
     </div>
 
-    <hr>
-    <div>
-      <div id="grower_names_by_recent_corn"></div>
-      <button onclick="showGrowerNamesByPlantationRecentFirst('corn')">Show Growers Name for this year for corn by date</button>
+    <div>    
+      <div class="section-header">
+        Soybeans Growers Information for this year sorted by recent date
+      </div>
+      <div class="section-button">
+        <button onclick="showGrowerNamesByPlantationRecentFirst('soybeans')">Show</button>
+      </div>
+      <div class="section-result" id="grower_names_by_recent_soybeans"></div>
     </div>
 
-    <hr>
     <div>
-      <div id="grower_names_by_recent_soybeans"></div>
-      <button onclick="showGrowerNamesByPlantationRecentFirst('soybeans')">Show Growers Name for this year for soybeans by date</button>
+      <div class="section-header">
+        Tests execution results
+      </div>
+      <div class="section-button">
+        <button onclick="runTests()">Run Tests</button>
+      </div> 
+      <div class="section-result" id="tests"></div>
     </div>
 
-    <hr>
-    <div>
-      <div id="tests"></div>
-      <button onclick="runTests()">Run Tests</button>
-    </div> 
   </body>
 </html>
