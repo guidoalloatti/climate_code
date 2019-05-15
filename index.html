@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Growers Example</title>
+    <script type="text/javascript" src="growers.js"></script>
+    <script type="text/javascript" src="tests.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>
+        Growers Information (JSON format)
+      </h1>
+    </div>
+
+    <hr>
+    <div>
+      <div id="growers_json"></div>
+      <button onclick="showGrowersJSON()">Show Growers Dataset - JSON</button>
+    </div>
+
+    <hr>
+    <div>
+      <div id="grower_names_corn"></div>
+      <button onclick="showGrowerNamesByPlantation('corn')">Show Growers Name for this year for corn</button>
+    </div>
+
+    <hr>
+    <div>
+      <div id="grower_names_soybeans"></div>
+      <button onclick="showGrowerNamesByPlantation('soybeans')">Show Growers Name for this year for soybeans</button>
+    </div>
+
+    <hr>
+    <div>
+      <div id="grower_names_by_recent_corn"></div>
+      <button onclick="showGrowerNamesByPlantationRecentFirst('corn')">Show Growers Name for this year for corn by date</button>
+    </div>
+
+    <hr>
+    <div>
+      <div id="grower_names_by_recent_soybeans"></div>
+      <button onclick="showGrowerNamesByPlantationRecentFirst('soybeans')">Show Growers Name for this year for soybeans by date</button>
+    </div>
+
+    <hr>
+    <div>
+      <div id="tests"></div>
+      <button onclick="runTests()">Run Tests</button>
+    </div> 
+  </body>
+</html>
