@@ -14,7 +14,7 @@ function runTests() {
 function printTestResults() {
 	var html = "<ul>";
 	for(var i = 0; i < testsResults.length; i++) {
-		html = html + "<li>" + testsResults[i].description + " -> " + (testsResults[i].result ? "pass" : "failed");
+		html = html + "<li>" + testsResults[i].description + " -> " + (testsResults[i].result ? "pass" : "failed") + "</li>";
 	}
 	html = html + "</ul>"
 	document.getElementById("tests").innerHTML = html;
