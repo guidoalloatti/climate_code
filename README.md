@@ -10,8 +10,11 @@ Basic Requirement
 - A planting event has a date and a crop type that was planted on that date. 
 - A crop type can be corn or soybeans. 
 2. Write a function to list the names of every grower that has planted a specific crop type 
-this year. 3. Write one or more unit tests to verify the above function works as expected. Try to think 
+this year. 
+3. Write one or more unit tests to verify the above function works as expected. Try to think 
 of valuable cases to test for. 
-Bonus questions: 
+
+# Bonus questions: 
 4. Sort the grower name results of the function so that growers that have planted more 
-recently are ordered earlier. 5. How would you optimize the code so that the function will perform better? 
+recently are ordered earlier. 
+5. How would you optimize the code so that the function will perform better? 
