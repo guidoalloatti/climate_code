@@ -1,6 +1,5 @@
 var growersList = [];
 var growersDetails = [];
-var testsResults = [];
 
 function getGrowerNamesThisYear(plantation) {
 	growersList = [];

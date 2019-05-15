@@ -1,13 +1,20 @@
+var testsResults = [];
+
 function runTests() {
+	testsResults = [];
 	eval_test(testShowGrowerNamesByPlantation("corn"), "Testing that the corn growers list matches");
 	eval_test(testShowGrowerNamesByPlantation("soybeans"), "Testing that the soybeans growers list matches");
 	
 	eval_test(testShowGrowerNamesByPlantationByRecent("corn"), "Testing that the corn growers list matches sorted by recent");
 	eval_test(testShowGrowerNamesByPlantationByRecent("soybeans"), "Testing that the corn growers list matches sorted by recent");
 
-	var i;
-	var html = "<ul>"
-	for(i = 0; i < testsResults.length; i++) {
+	printTestResults();
+}
+
+function printTestResults() {
+	var html = "";
+	html += "<ul>";
+	for(var i = 0; i < testsResults.length; i++) {
 		html = html + "<li>" + testsResults[i].description + " -> " + (testsResults[i].result ? "pass" : "failed");
 	}
 	html = html + "</ul>"
