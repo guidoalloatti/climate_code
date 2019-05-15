@@ -33,9 +33,8 @@ function showGrowersJSON() {
 
 function showGrowerNamesByPlantation(plantation) {
 	getGrowerNamesThisYear(plantation);
-	var i;
 	var html = "<ul>";
-	for (i = 0; i < growersList.length; i++)	{
+	for (var i = 0; i < growersList.length; i++) {
 		html = html + "<li>" + growersList[i] + "</li>";
 	}
 	html = html + "</ul>";
@@ -45,9 +44,8 @@ function showGrowerNamesByPlantation(plantation) {
 function showGrowerNamesByPlantationRecentFirst(plantation) {
 	getGrowerNamesThisYear(plantation);
 	var growers = sortGrowersByRecentPlantation();
-	var i;
 	var html = "<ul>";
-	for (i = 0; i < growers.length; i++)	{
+	for (var i = 0; i < growers.length; i++) {
 		html = html + "<li>" + growers[i].grower_name + " planted " + growers[i].planted + " on " + growers[i].date.toLocaleDateString() + "</li>";
 	}
 	html = html + "</ul>";
